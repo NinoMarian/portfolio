@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⎪Nino's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="./projets/Nicon.png">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar" style="justify-content: flex-end;">
+        
+        <div class="menu">
+            <a href="about.html" class="about-btn">à propos</a>
+            <button id="theme-toggle" class="theme-btn">
+                <span class="btn-text">SWITCH MODE</span>
+                <div class="status-dot"></div>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>NINO'S<br><span class="outline">PORTFOLIO</span></h1>
+            <p class="hero-subtitle">Graphisme & Motion Design</p>
+        </div>
+    </header>
+
+    <div class="marquee-container">
+        <div class="marquee-content">
+            /// MOTION DESIGN /// 3D ART /// WEB DESIGN /// BRANDING /// 
+            MOTION DESIGN /// 3D ART /// WEB DESIGN /// BRANDING ///
+        </div>
+    </div>
+
+    <section class="gallery" id="work">
+        <div class="gallery-header-row">
+            <h2>Mes projets</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Voir tout</button>
+                <button class="filter-btn" data-filter="motion">MP4</button>
+                <button class="filter-btn" data-filter="identity">Design & 3D</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+            </div>
+        </div>
+        <span class="accent-line"></span>
+
+        <div class="grid-container">
+
+            <article class="project-card" data-category="motion" 
+                data-title="GAMES BOYS" 
+                data-desc="Voici un projet universitaire que j'ai pu réaliser en groupe en 2025. Le but était de passer d'un monde réel à un monde irréel, et pour celà, nous avions décidé avec mes camarades de débattre de nos jeux vidéos préferés. Après l'ouverte d'un portail magique nous nous voyons chacun attérir dans l'univers que nous avions chacun défendu, celui de notre jeu vidéo préferé. Le projet s'appelle 'Games Boys' en réference à la fameuse console de jeu que nous avions mis au pluriel comme nous étions plusieurs.<br><br> Ce projet a été réalisé avec Adobe Premiere Pro pour le montage vidéo, After Effects pour les effets visuels."
+                data-tools="premierepro"
+                data-type="video"
+                data-src="./projets/POKéMON.mp4"> <div class="media-wrapper">
+                     <img src="./projets/minia.png" alt="Miniature Showreel">
+                     <div class="play-overlay">▶</div>
+                </div>
+                
+                <div class="project-info">
+                    <h3>Games Boys</h3>
+                    <p>Motion Design</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="motion" 
+                data-title="LOGO ANIMATION" 
+                data-desc="Lors de la 'Nuit de l'Info' de 2025, un évenement où le but est de créer un projet web en 1 nuit, nous avions pour défi de réaliser une animation logo d'un des partenaires de l'évenement, KLUB. J'ai donc réalisé cette animation de logo en motion design, en utilisant Adobe After Effects et Illustrator pour la création des éléments graphiques. Je pense aujourd'hui pouvoir mieux faire, mais je fut restreint par le temps lors de l'évenement. <br></br> Cependant, ce défi m'a permis de développer de nouvelles compétences notamment sur After Effects, en plus du fait de travailler dans des conditions proche de celle du monde professionnel."
+                data-tools="aftereffects,illustrator"
+                data-type="video"
+                data-src="./projets/K1.mp4, ./projets/K2.mp4">
+                
+                <div class="media-wrapper">
+                     <img src="./projets/kminia.png" alt="Miniature Logo">
+                     <div class="play-overlay">▶</div>
+                </div>
+                
+                <div class="project-info">
+                    <h3>Logo Motion</h3>
+                    <p>Motion Design</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="identity"
+                data-title="NIRD"
+                data-desc="Voici un projet dont je suis vraiment fier. Réalisé aussi lors de la 'Nuit de l'Info' j'ai relevé le défi qui était d'intégrer un logo 3D dans notre page d'accueil de notre site web. Lors de ce projet j'ai été chargé de réaliser le logo en 3D le l'association NIRD sur Blender. J'ai donc modélisé, texturé et éclairé le logo en 3D avant de l'exporter au format .glb pour ainsi l'envoyé à collègue chargé de l'intégrer dans notre site web. <br><br> Ce projet m'a permis de découvrir le logiciel Blender et d'apprendre les bases de la modélisation 3D ainsi que de comprendre comment fonctionne l'intégration de modèles 3D dans une page web.<br><br>La nuit de l'info est un évenement annuel où des étudiants en informatique se réunissent pour créer des projets web en 16 heures autour d'un thème donné. C'est une excellente opportunité pour moi d'appliquer mes compétences en design graphique et de collaborer avec d'autres étudiants de ma formation passionnés par la technologie et le développement web.<br><br> <a href='https://doremilx.github.io/champ-ions/' target='_blank' class='project-link'>VISITER LE SITE EN LIVE ↗</a>"
+                data-tools="blender"
+                data-type="3d"
+                data-src="./projets/LogoNIRD.glb">
+
+                <div class="media-wrapper" style="background: radial-gradient(circle, #7272723f 0%, #000000 100%);">
+                    <model-viewer 
+                        src="./projets/LogoNIRD.glb" 
+                        auto-rotate 
+                        disable-zoom
+                        shadow-intensity="1"
+                        camera-orbit="45deg 55deg 105%"
+                        field-of-view="30deg"
+                        style="width: 100%; height: 100%; pointer-events: none;">
+                    </model-viewer>
+                </div>
+                
+                <div class="project-info">
+                    <h3>Logo 3D</h3>
+                    <p>3D</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="identity"
+                data-title="LUIDJI"
+                data-desc="Luidji est un artiste et rappeur français assez populaire du coté des personnes de ma génération. Son style unique mélange habilement rap et mélodies accrocheuses, ce qui lui a permis de se faire un nom sur la scène musicale. <br><br> J'ai réalisé cette affiche en m'inspirant de son univers visuel souvent sombre et mélancolique, tout en y ajoutant une touche personnelle pour refléter mon propre style graphique. Pour illustrer son style musical, j'ai opté pour un titre dans un style 'fondu', qui fait un peu penser aux émotions qu'il essaie de transmettre à travers ses paroles. <br><br> Par cette affiche j'ai cherché à développer ma créativité en explorant de nouveaux skills' sur Photoshop que je ne maîtrisais pas encore. J'ai réaliser cette durant mon temps libre en 2025. C'est par ces création que je peux illustrer mon univers."
+                data-tools="photoshop,illustrator"
+                data-type="image"
+                data-images="./projets/luidji.jpg, ./projets/luidji2.png">
+
+                <div class="media-wrapper">
+                    <img src="./projets/luidji.jpg" alt="Affiche Luidji">
+                </div>
+                
+                <div class="project-info">
+                    <h3>Luidji</h3>
+                    <p>Design Graphique</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="identity"
+                data-title="FUSHIGURO TOJI"
+                data-desc="Jujutsu Kaisen est un manga japonnais très populaire de ces dernieres années. Fushiguro Toji est un personnage charismatique et emblématique de cette série, connu pour son style sombre, mystérieux et sa puissance en combat. J'ai réalisé cette affiche en m'inspirant de son univers visuel, en utilisant des couleurs sombres et des effets de lumière pour créer une atmosphère intense et captivante. <br><br> Cette création m'a permis d'explorer de nouvelles techniques sur Photoshop, notamment en incrustation d'image dans des formes, et en jouant avec les textures que nous pouvions apporté aux affiches. Ici je lui ai donné une texture de papier ancien qui s'est très bien marié avec la couleur blanche de l'affiche. <br><br> Réalisée en 2025 durant mon temps libre, cette affiche illustre mon intérêt pour le graphisme et ma capacité à m'inspirer de différents univers pour créer des designs uniques."
+                data-tools="photoshop"
+                data-type="image"
+                data-images="./projets/post_1.png, ./projets/post_2.png, ./projets/post_3.png">
+                
+                <div class="media-wrapper">
+                    <img src="./projets/post_1.png" alt="Affiche Toji">
+                </div>
+                <div class="project-info">
+                    <h3>FUSHIGURO TOJI</h3>
+                    <p>Design Graphique</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="identity"
+                data-title="Logo & Titre"
+                data-desc="C'est deux projets personnels réalisé en 2025 on été réaliser dans le but de m'entrainer texturer un logo ou un mot, afin de créer des accroches visuelles. Réaliser sur Photoshop, ces réalisations m'ont permis de comprendre les parametres 'd'Option de fusion', ce qui m'a permis de réaliser une texture métalique/verre ainsi que d'ajouter un degradé de couleur. <br><br> Pour le titre Chrome, j'ai ajouté en plus une texture de 'bruit' qui je trouve complétais cette police gothique. Le N quand à lui a des contours plus épais qui lui donne un aspect plus robuste. Mon but par la suite est de réaliser ces mêmes titres et logos en 3D."
+                data-tools="photoshop"
+                data-type="image"
+                data-images="./projets/n.png, ./projets/chrome.png">
+
+                <div class="media-wrapper">
+                    <img src="./projets/minia2.png" alt="Miniature du projet">
+                </div>
+                
+                <div class="project-info">
+                    <h3>Logo & Titre</h3>
+                    <p>Design Graphique</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="identity"
+                data-title="cover de journal"
+                data-desc="De base je n'avais pas prévu de présenter cette affiche ici, cependant je pense qu'elle me permet de montrer mon ouverte d'esprit et de montrer que je m'intéresse à ce qui m'entoure, à ce qui se passe dans le monde. Je veux aussi montrer mon intéret pour l'univers du média et de l'information; chercher à interpeler le lecteur au l'auditeur par des mots et du visuel.<br><br> Réaliser en 2025 lors d'un petit devoir universitaire, le but de cette affiche était de créer une affiche sur Photoshop grâce à un article de 'dataforgood'. J'ai ainsi du repérer les mots clés, tirer des extraits qui me servirait de phrase d'accroche. Mon objectif était d'attirer l'oeil du lecteur, de par le choix des couleurs assez sérieuses mais aussi par les mots choisis. "
+                data-tools="photoshop"
+                data-type="image"
+                data-images="./projets/journal.png"> <div class="media-wrapper">
+                    <img src="./projets/journal.png" alt="journal">
+                </div>
+                
+                <div class="project-info">
+                    <h3>Cover de journal</h3>
+                    <p>Design Graphique</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="identity"
+                data-title="hayakawa"
+                data-desc="Aki Hayajawa est un autre personnage phare de du manga Jujutsu Kaisen. C'est un personnage très calme qui montre peu ses émotions. <br><br> 
+                J'ai réaliser cette affiche en restant dans une thème similaire à celle que j'ai réaliser sur Fushiguro Toji. J'ai utilisé des couleurs sombres et des effets de lumière pour créer une atmosphère intense et captivante. Cette création m'a permis à mémoriser des techniques sur Photoshop d'incrustation d'images dans des formes et en jouant avec les textures. Ici je lui ai remis une texture papier ancien pour les mêmes raisons que la précedente <br><br> Réalisée en 2025 durant mon temps libre, je cherche à travers ses nombreuses affiches mon réel intérets à les réaliser."
+                data-tools="photoshop"
+                data-type="image"
+                data-images="./projets/sabrina.png"> <div class="media-wrapper">
+                    <img src="./projets/sabrina.png" alt="hayakawa">
+                </div>
+                
+                <div class="project-info">
+                    <h3>Cover de journal</h3>
+                    <p>Design Graphique</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="identity"
+                data-title="tyler"
+                data-desc="Par cette affiche, j'ai cherché dans un premier temps à m'approprier le style 'Treshold' que l'on peut donner aux sujets de nos sujets (ici l'artistre) ainsi qu'à améliorer mes compétences sur Illustrator. <br><br> La première étape était de donner le style Treshold à l'artiste en pleine performance, puis compléter l'espace avec des éléments visuels tous réaliser moi même sur illustrator, hors mis sa signature. Le nom d'artistre étant composé de trois mots, j'ai donc voulu choisir une police différente pour chacun, et je ne pense pas que ce fut une mauvaise idée. J'aime beaucoup cette affiche, cependant je trouve qu'elle a un petit coté bazar du fait de la multitude d'éléments. <br><br> Réalisée en 2025."
+                data-tools="photoshop,illustrator"
+                data-type="image"
+                data-images="./projets/tylor.jpg"> <div class="media-wrapper">
+                    <img src="./projets/tylor.jpg" alt="Affiche Tylor">
+                </div>
+                
+                <div class="project-info">
+                    <h3>Tyler The Creator</h3>
+                    <p>Design Graphique</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="identity"
+                data-title="Le P'tit Jardin"
+                data-desc="Le petit jardin est association de quartier qui a pour but de proposer un jardin collaboratif à ses habitants. Accessible 24h/24 et 7j/7, c'est un lieu idéal tant bien pour faire de nouvelles rencontres, que pour simplement venir se vider l'esprit, après une mauvaise journée, le travail, ou juste par pur plaisir. <br><br>
+                Le but de ce projet de groupe universitaire, réalisé en 2025, était de créer une identité visuelle en partant de rien. Nous nous sommes dans un premier temps réuni avec la présidente de l'association pour cerner ses besoins et ses attentes. Nous avons ensuite réalisé un moodboard afin de définir l'univers graphique du projet. A la fin, nous avions pu présenter une véritable charte graphique présentant un logo, une affiche, une vidéo de présentation de l'association, des mockups, ainsi que des éléments graphiques essentiels comme les polices ainsi que la palette de couleur. <br><br> Nous avions utilisé
+                divers logiciels Adobe pour réaliser cette charte, comme Illustrator, Photoshop, After Effects, et assembler le tout sur InDesign. Ce projet nous a permis travailler en équipe, de gérer un projet de A à Z, et de développer nos compétences en design graphique et en communication visuelle."
+                "
+                data-tools="illustrator,photoshop,aftereffects,indesign"
+                data-type="mixed"
+                data-images="./projets/jardin/1.png, ./projets/jardin/2.png, ./projets/jardin/3.png, ./projets/jardin/4.png, ./projets/jardin/5.png, ./projets/jardin/6.png, ./projets/jardin/7.png, ./projets/jardin/8.png, ./projets/jardin/9.png, ./projets/jardin/video.mp4, ./projets/jardin/affiche.png">
+
+                <div class="media-wrapper">
+                    <img src="./projets/jardin/1.png" alt="Le P'tit Jardin Miniature">
+                </div>
+                
+                <div class="project-info">
+                    <h3>Le P'tit Jardin</h3>
+                    <p>Branding & Motion</p>
+                </div>
+            </article>
+            
+            <article class="project-card" data-category="web"
+                data-title="Restaurant Itadakimasu"
+                data-desc="ITADAKIMASU est un projet de groupe universitaire que j'ai réalisé en 2025. L'objectif de ce site, était de répertorier des recettes. Nous avions donc choisi d'y présenter divers plats présents dans de nombreux mangas. 
+                <br><br>
+                Nous avions voulu apporté un coté communautaire à note site, en proposant un système de vote et de partage de recette. Nous étions très fière du résultat malgré les quelques défauts qu'il y peut encore avoir. Nous nous sommes beaucoups investis dns ce projets, ce qui nous a permis de développer nos compétences en développement web, ainsi qu'en conception de maquette de site.
+                <br><br>
+                Formé aux règles Opquast, ce site à été réaliser en respectant un maximum les bonnes pratiques du web.
+                <br><br><a href='http://itadakimasu.rajemison.projetsmmichamps.fr/' target='_blank' class='project-link'>VISITER LE SITE ↗</a>"
+                data-tools="html5,css3,javascript,figma"
+                data-type="image"
+                data-images="./projets/menu.png, ./projets/recette.png"> 
+
+                <div class="media-wrapper">
+                    <img src="./projets/menu.png" alt="Itadakimasu Website">
+                </div>
+                <div class="project-info">
+                    <h3>Itadakimasu</h3>
+                    <p>Développement Web</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="web"
+    data-title="Data-Média"
+    data-desc="Datavize est un projet universitaire que j'ai réaliser en 2025. Nous devions répertorier des données sur le thème de notre choix et y insérer des graphiques. J'ai donc choisi pour thème de présenter l'évolution du nombre d'utilisateurs sur les réseaux sociaux entre 2015 et 2025.
+    En plus de ca nous devions rédiger une page de mention légales étants données que nous allions utiliser des données réelles de sources extérieures. 
+    C'est un simple simple sous forme de one page, qui en plus des compétences web développés, m'a permis de découvrir le tree.js ainsi que d'apprendre à l'intégrer.
+    <br><br> <a href='https://ninomarian.github.io/Social-Data/' target='_blank' class='project-link'>VISITER LE SITE ↗</a>"
+    data-tools="html5,css3,javascript"
+    data-type="image"
+    data-images="./projets/datavize.png, ./projets/graph.png"> 
+
+    <div class="media-wrapper">
+        <img src="./projets/datavize.png" alt="Data-Media Miniature">
+        </div>
+    
+    <div class="project-info">
+        <h3>Data-Média</h3>
+        <p>Développement Web</p>
+    </div>
+</article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-copy">© 2026 Nino Marian. Tout droit réservé.</p>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="close-btn">&times;</button>
+            
+            <div class="modal-content">
+                <div class="modal-media">
+                    <div class="slider-container">
+                        <div class="slides-wrapper" id="modal-slides">
+                            </div>
+                        <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+                        <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="modal-info">
+                    <h2 id="modal-title">Titre du Projet</h2>
+                    <p id="modal-desc" class="modal-desc">Description...</p>
+                    
+                    <div class="modal-tools">
+                        <h4>TOOLS USED</h4>
+                        <div class="tools-icons" id="modal-tools-icons"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
