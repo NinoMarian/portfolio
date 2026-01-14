@@ -92,21 +92,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
 
                 } else if (type === '3d') {
-                    // Cas : Modèle 3D
-                    const modelSrc = card.getAttribute('data-src');
-                    totalSlides = 1;
-                    const slide = document.createElement('div');
-                    slide.className = 'slide';
-                    slide.innerHTML = `
-                        <model-viewer 
-                            src="${modelSrc}" 
-                            auto-rotate 
-                            camera-controls 
-                            shadow-intensity="1">
-                        </model-viewer>`;
-                    slidesWrapper.appendChild(slide);
+    // Cas : Modèle 3D
+    const modelSrc = card.getAttribute('data-src');
+    totalSlides = 1;
+    const slide = document.createElement('div');
+    slide.className = 'slide';
+    
+    // J'ai ajouté field-of-view="30deg" pour le zoom et le style width/height à 100%
+    slide.innerHTML = `
+        <model-viewer 
+            src="${modelSrc}" 
+            auto-rotate 
+            camera-controls 
+            shadow-intensity="1"
+            field-of-view="30deg" 
+            camera-orbit="45deg 55deg 105%"
+            style="width: 100%; height: 100%;">
+        </model-viewer>`;
+    slidesWrapper.appendChild(slide);
 
-                } else if (type === 'mixed') {
+} else if (type === 'mixed') {
                     // NOUVEAU CAS : Mélange Images et Vidéos (Le P'tit Jardin)
                     const sourcesStr = card.getAttribute('data-images');
                     const sourcesList = sourcesStr.split(',');
